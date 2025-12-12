@@ -81,7 +81,7 @@ h1 {
     }
 }
 
-.birthday-btn {
+button {
     margin-top:30px;
     padding: 12px 24px;
     font-size: 1.2em;
@@ -92,7 +92,7 @@ h1 {
     color: #fff;
     text-shadow: 0 0 5px #000;
     animation: pulse 2s ease-in-out infinite;
-    z-index:2
+    z-index:1
 }
 
 @keyframes pulse {
@@ -113,8 +113,9 @@ canvas {
 @media (max-width:600px) {
     h1{ font-size : 2rem }
     .wish {font-size:1.2rem}
-    .birthday-btn {font-size:1rem ; padding : 0.5em 1em ; }
+    button {font-size:1rem ; padding : 0.5em 1em ; }
 }
+
 
 
 

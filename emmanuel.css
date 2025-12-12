@@ -91,7 +91,8 @@ button {
     background: linear-gradient(90deg, #00fff0, #ff00f7, #ffd000, #61ff7a);
     color: #fff;
     text-shadow: 0 0 5px #000;
-    animation: pulse 2s infinite;
+    animation: pulse 2s ease-in-out infinite;
+    z-index:2
 }
 
 @keyframes pulse {
@@ -108,3 +109,7 @@ canvas {
     z-index: 1;
     pointer-events: none;
 }
+
+@media (max-width:600px) {
+    h1{ font-size : 2rem }
+    .wish {font-size:1.2rem}

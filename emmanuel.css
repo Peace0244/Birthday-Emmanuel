@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg1: #0a0a12;
+    --bg2:#111123;
+    --accent1:#000ff0;
+    --accent2:#ff00f7;
+    --accent3:#ffd000;
+    --accent4:#61ff7a;
+    --white:#f7f7ff;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg1);
+    font-family: "Poppins" , "Sans-seriff";
+    color: var(--white);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 
+    0 0 5px #00fff0 ,
+    0 0 10px #00fff0 ,
+    0 0 20px #ff00f7,
+    0 0 40px #ffd000;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 
+        0 0 5px #00fff0,
+        0 0 10px #00fff0 ,
+        0 0 20px #ff00f7,
+        0 0 40px #ffd000;
+    }
+    to {
+        text-shadow: 
+        0 0 10px #ff00f7,
+        0 0 20px #ffd000 ,
+        0 0 40px #61ff7a,
+        0 0 80px #00fff0;
+    }
+}
+
+.wish{
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 
+    0 0 5px #61ff7a,
+    0 0 10px #ffd000,
+    0 0 20px #00fff0;
+    animation:Glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes Glow {
+    from {
+        text-shadow: 
+        0 0 5px #61ff7a,
+        0 0 10px #ffd000,
+        0 0 20px #00fff0;
+    }
+    to {
+        text-shadow: 
+        0 0 10px #ffd000,
+        0 0 20px #00fff0,
+        0 0 40px #61ff7a;
+    }
+}
+
+button {
+    margin-top:30px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #00fff0, #ff00f7, #ffd000, #61ff7a);
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% , 100% {box-shadow:0 0 10px #00fff0}
+    50% {box-shadow:0 0 20px #ff00f7}
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
